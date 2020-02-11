@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+    font-family: 'Comic sans MS';
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#title-madera {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.homepage-content {
+    position: static;
+    background-color: white;
+    margin-left: 12.5%;
+    width: 75%;
+    text-align: center;
+}
+
+#homepage-madera-picture {
+    max-width: 80%;
+    height: auto;
+}
+
+.box-data {
+    text-align: left;
+    display: inline-block;
+    height: 10em;
+    width: 40%;
+}
+
+.homepage-image-box {
+    display: inline-block;
+    left: 0;
+    height: 10em;
+    max-width: 40%;
+}
+
+.homepage-description-box {
+    display: inline-block;
+    height: 10em;
+    width: 54%;
+    padding-left: 4%;
+}
+
+.homepage-description-box h1, .box-data h1 {
+    font-size: 1.5em; 
+    color: #a2c037;
+}
+
+.homepage-description-box a {
+    color: #a2c037;
+    text-decoration: underline;
+}
+
+#homepage-title-news {
+    padding-top: 1em;
+    font-weight: normal;
+    border-bottom: solid;
+    padding-bottom: 0.5em;
+}
+
+.homepage-news {
+    display: grid;
+    grid-template-columns: 10% 40% 40%;
+}
+
+.box-data-news {
+    text-align: center;
+    display: inline-block;
+    height: 17em;
+}
+
+.box-data-news h1 {
+    font-size: 1em;
+    color: #a2c037;
+}
+
+#news-1 {
+    grid-column: 2;
+}
+
+#news-2 {
+    grid-column: 3;
+}
+
+.news-presentation img {
+    width: 100%;
+    height: auto;
+}
