@@ -1,0 +1,105 @@
+header {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 30fr 14fr 14fr 14fr 14fr 14fr;
+    grid-template-rows: auto;
+}
+
+#logo-header {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+}
+
+.header-routes {
+    display: flex;
+    font-size: 1vw;
+    font-size: 2vmax;
+    height: 100%;
+    width: auto;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.header-routes:hover {
+    background-color: rgb(211, 210, 210);
+}
+
+.header-routes a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+#routes-acceuil {
+    grid-column: 2;
+}
+
+#routes-entreprise {
+    grid-column: 3;
+}
+
+#routes-solutions {
+    grid-column: 4;
+}
+
+#routes-cctp {
+    grid-column: 5;
+}
+
+#routes-contact {
+    grid-column: 6;
+}
+
+/*
+header {
+    padding-top: 0.5em;;
+    padding-bottom: 1.5em;
+    display: grid, inline;
+    font-size: 2em;
+}
+
+.logo-header {
+	max-width: 25%;
+	height: auto;
+}
+
+.logo-header-left {
+    grid-column: 1;
+}
+
+header a {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-color: grey;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+header a:hover {
+    background-color: rgb(211, 210, 210);
+}
+
+#routes-acceuil {
+    grid-column: 2;
+}
+
+#routes-entreprise {
+    grid-column: 3;
+}
+
+#routes-solutions {
+    grid-column: 4;
+}
+
+#routes-cctp {
+    grid-column: 5;
+}
+
+#routes-contact {
+    grid-column: 6;
+}
+*/
