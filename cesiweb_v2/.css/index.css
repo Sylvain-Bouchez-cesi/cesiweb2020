@@ -13,17 +13,96 @@ body {
 .homepage-content {
     background-color: white;
     display: grid;
-    grid-template-areas: "void picture picture void"
-                         "void section section void"
-                         "void news news void";
-    grid-template-columns: 20fr 30fr 30fr 20fr;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-columns: repeat(5, 20fr);
+    grid-template-rows: repeat(3, 450);
 }
 
 #homepage-madera-picture {
     width: 100%;
-    height: auto;
-    grid-area: picture;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.homepage-section {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+}
+
+.box-data {
+    border: solid;
+    
+    display: grid;
+    grid-template-rows: 130px auto;
+    grid-template-columns: 40% auto;
+}
+
+.box-data img {
+    height: 100%;
+    width: auto;
+    min-height: 100px;
+}
+
+.homepage-description-box {
+    font-size: 0.7vmax;
+}
+
+#homepage-tertiaire {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#homepage-creche {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#homepage-association {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#homepage-bailleur {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#homepage-location {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#homepage-agricole {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.homepage-news {
+    border: solid;
+    background-color: green;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
 }
 
 /*
