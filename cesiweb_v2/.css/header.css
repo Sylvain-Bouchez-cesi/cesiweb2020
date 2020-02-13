@@ -1,5 +1,4 @@
 header {
-    font-size: 2em;
     display: grid;
     grid-template-columns: 30fr 14fr 14fr 14fr 14fr 14fr;
     grid-template-rows: auto;
@@ -13,8 +12,7 @@ header {
 
 .header-routes {
     display: flex;
-    font-size: 1vw;
-    font-size: 2vmax;
+    font-size:2vw;
     height: 100%;
     width: auto;
     text-align: center;
