@@ -14,7 +14,7 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: repeat(5, 20fr);
-    grid-template-rows: repeat(3, 450);
+    grid-template-rows: 450 450 30 450;
 }
 
 #homepage-madera-picture {
@@ -38,6 +38,7 @@ body {
 }
 
 .box-data {
+    justify-self: center;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -50,65 +51,37 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
-    width: auto;/*
-    min-width: 165px;
-    max-height: 500px;
-    max-width: 100px;*/
+    width: auto;
+}
+
+.box-data h1 {
+    font-size:0.7vw;
+    font-size:2vmin;
 }
 
 .homepage-description-box {
     font-size:0.7vw;
     font-size:2vmin;
 }
-/*
-#homepage-tertiaire {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
 
-#homepage-creche {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-#homepage-association {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
-#homepage-bailleur {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
-#homepage-location {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-
-#homepage-agricole {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-
-.homepage-news {
-    border: solid;
-    background-color: green;
+#homepage-news-title {
+    text-align: center;
+    font-size:0.7vw;
+    font-size:2vmin;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.homepage-news {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 453px));
+    grid-auto-rows: auto;
 }
 */
 /*

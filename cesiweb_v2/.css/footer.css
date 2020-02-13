@@ -7,24 +7,24 @@ footer{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 3em 9em;
     color: white;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .homepage-footer-title {
     background-color: #396639;
     text-align: center;
-    font-size: 0.5em;
+    font-size:0.7vw;
     font-weight: normal;
 }
 
-.footer-image {
-    display: inline-block;
-    padding-top: 8%;
+.footer-text {
+  font-size:1vw;
 }
 
-.footer-image a img {
-    max-width: 6em;
-    max-height: auto;
+#homepage-footer-data-follow img {    
+  width: 40%;
+  height: auto;
+  max-width: 6em;
 }
 
 #homepage-footer-title-news {
@@ -41,6 +41,8 @@ footer{
 
 #homepage-footer-title-follow {
   grid-column: 4; grid-row: 1;
+
+  display: inline-block;
 }
 
 #homepage-footer-data-news {
@@ -58,4 +60,5 @@ footer{
 #homepage-footer-data-follow {
   grid-column: 4; grid-row: 2;
   text-align: center;
+  padding-top: 1em;
 }
