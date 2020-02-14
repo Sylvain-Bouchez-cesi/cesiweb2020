@@ -24,7 +24,7 @@
         <div id="list-comment">
             <h1>Vos avis</h1>
             
-            <div v-for="comment in commentList" :key="comment.username" class="box-comment">
+            <div v-for="comment in commentList" :key="comment.key" class="box-comment">
                 <p class="comment-title">{{comment.username}}</p>
                 <p class="comment-content">{{comment.comment}}</p>
             </div>
@@ -86,6 +86,7 @@
             var listComment = new Vue({
                 el: '#list-comment',
                 data: {
+                    count: 0,
                     username: "",
                     comment: "",
                     commentList: [
@@ -102,6 +103,7 @@
                 methods: {
                     addComment: function() {
                     this.commentList.push({
+                        key: this.username + (++this.count).toString(),
                         username: this.username,
                         comment: this.comment
                     })
