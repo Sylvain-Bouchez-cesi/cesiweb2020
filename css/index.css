@@ -83,93 +83,45 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 453px));
     grid-auto-rows: auto;
 }
-*/
-/*
-#title-madera {
-    margin-top: 1%;
-    text-align: center;
-}
 
-.bold {
-    font-weight: bold;
-}
+/*Avis*/
 
-.homepage-content {
-    position: static;
-    background-color: white;
-    margin-left: 12.5%;
-    width: 75%;
-    text-align: center;
-}
-
-#homepage-madera-picture {
-    max-width: 80%;
-    height: auto;
-}
-
-.box-data {
-    text-align: left;
-    display: inline-block;
-    height: 10em;
-    width: 40%;
-}
-
-.homepage-image-box {
-    display: inline-block;
-    left: 0;
-    height: 10em;
-    max-width: 40%;
-}
-
-.homepage-description-box {
-    display: inline-block;
-    height: 10em;
-    width: 54%;
-    padding-left: 4%;
-}
-
-.homepage-description-box h1, .box-data h1 {
-    font-size: 1.5em; 
-    color: #a2c037;
-}
-
-.homepage-description-box a {
-    color: #a2c037;
-    text-decoration: underline;
-}
-
-#homepage-title-news {
-    padding-top: 1em;
-    font-weight: normal;
-    border-bottom: solid;
-    padding-bottom: 0.5em;
-}
-
-.homepage-news {
+#list-comment {
     display: grid;
-    grid-template-columns: 10% 40% 40%;
+    grid-template-columns: 20fr 60fr 20fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
 
-.box-data-news {
+#list-comment h1 {
     text-align: center;
-    display: inline-block;
-    height: 17em;
+    grid-column-start: 0;
+    grid-column-end: 3; 
+    font-size:0.7vw;
+    font-size:7vmin;
 }
 
-.box-data-news h1 {
-    font-size: 1em;
-    color: #a2c037;
+.box-comment {
+    grid-column-start: 2;
+    grid-column-end: 3; 
 }
 
-#news-1 {
-    grid-column: 2;
+#list-comment form {
+    grid-column-start: 2;
+    grid-column-end: 3; 
 }
 
-#news-2 {
-    grid-column: 3;
-}
-
-.news-presentation img {
+#list-comment form textarea{
     width: 100%;
-    height: auto;
+}
+
+.comment-title {
+    font-size:1vw;
+    font-size:5vmin;
+}
+
+.comment-content {
+    font-size:0.7vw;
+    font-size:3vmin;
 }

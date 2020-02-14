@@ -1,3 +1,3 @@
 # Cesi Web 2020
 
-**link :** http://http://sylvain-bouchez.ril.nte.ovh
+**link :** http://sylvain-bouchez.ril.nte.ovh/
