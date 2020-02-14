@@ -24,6 +24,13 @@
         <div id="list-comment">
             <h1>Vos avis</h1>
             
+            <div v-if="errors.length > 0" class="error-comment">
+                <p>Erreur{{errors.length > 1 ? "s" : null}}: </p>
+                <div v-for="error in errors" :key="error.key">
+                    <p>{{error.message}}</p>
+                </div>
+            </div>
+
             <div v-for="comment in commentList" :key="comment.key" class="box-comment">
                 <p class="comment-title">{{comment.username}}</p>
                 <p class="comment-content">{{comment.comment}}</p>
@@ -87,6 +94,8 @@
                 el: '#list-comment',
                 data: {
                     count: 0,
+                    countError: 0,
+                    errors: [],
                     username: "",
                     comment: "",
                     commentList: [
@@ -95,18 +104,42 @@
                             comment: "test comment"
                         },
                         {
-                            username: "test pseudo2",
+                            username: "pseudo2",
                             comment: "test comment2"
                         }
                     ]
                 },
                 methods: {
                     addComment: function() {
-                    this.commentList.push({
-                        key: this.username + (++this.count).toString(),
-                        username: this.username,
-                        comment: this.comment
-                    })
+                        this.errors = [];
+                        this.commentList.filter(function(item){
+                            if(item.username === this.username){
+                                this.errors.push({
+                                    key: 'error' + (++this.countError).toString(),
+                                    message: "Un seul avis par utilisateur."
+                                })
+                            }
+                        },this);
+
+                        !this.username ? 
+                        this.errors.push({
+                            key: 'error' + (++this.countError).toString(),
+                            message: "Pas de pseudo."
+                        }) : null;
+
+                        !this.comment ? 
+                        this.errors.push({
+                            key: 'error' + (++this.countError).toString(),
+                            message: "Pas de commentaire."
+                        }) : null;
+
+                        if (this.errors.length <= 0) {
+                            this.commentList.push({
+                                key: this.username + (++this.count).toString(),
+                                username: this.username,
+                                comment: this.comment
+                            })
+                        }
                     }
                 }
             })
